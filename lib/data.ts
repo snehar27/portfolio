@@ -32,6 +32,8 @@ export const links = [
     hash: "#contact",
   },
 ] as const;
+// as const is used to specify that we are not using any strings but the strings
+// that we specify as values in this list
 
 export const experiencesData = [
   {
