@@ -1,14 +1,14 @@
 "use client";
 
-import React, { act, useState } from "react";
+import React, { act, useContext, useState } from "react";
 import { motion } from "framer-motion";
 import { links } from "@/lib/data";
 import Link from "next/link";
 import clsx from "clsx"; // allows for conditional formatting
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Header() {
-  const [activeSection, setActiveSection] = useState("Home"); // use when trying to keep track of something, keeps track of state
-
+  const { activeSection, setActiveSection } = useActiveSectionContext();
   return (
     <header className="z-[999] relative">
       <motion.div
@@ -47,7 +47,15 @@ export default function Header() {
                 {link.name}
 
                 {link.name === activeSection && (
-                  <span className="bg-gray-100 rounded-full absolute inset-0 -z-10"></span>
+                  <motion.span
+                    className="bg-pink-100 rounded-full absolute inset-0 -z-10"
+                    layoutId="activeSection"
+                    transition={{
+                      type: "spring",
+                      stiffness: 380,
+                      damping: 30,
+                    }}
+                  ></motion.span>
                 )}
               </Link>
             </motion.li>
