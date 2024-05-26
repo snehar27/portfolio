@@ -14,14 +14,14 @@ export default function Intro() {
   const { ref, inView } = useInView({
     threshold: 0.5,
   });
-  const { setActiveSection } = useActiveSectionContext();
+  const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
 
   useEffect(() => {
     // synchronize state with an external system (active-section-context)
-    if (inView) {
+    if (inView && Date.now() - timeOfLastClick > 1000) {
       setActiveSection("Home");
     }
-  }, [inView, setActiveSection]); // run only if one of these variables change
+  }, [inView, setActiveSection, timeOfLastClick]); // run only if one of these variables change, dependency array
 
   return (
     <section

@@ -10,14 +10,15 @@ export default function About() {
   const { ref, inView } = useInView({
     threshold: 0.75,
   });
-  const { setActiveSection } = useActiveSectionContext();
+  const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
 
   useEffect(() => {
     // synchronize state with an external system (active-section-context)
-    if (inView) {
+    if (inView && Date.now() - timeOfLastClick > 1000) {
+      // if inView and the diff between now and the time of the last click is more than 1 second
       setActiveSection("About");
     }
-  }, [inView, setActiveSection]); // run only if one of these variables change
+  }, [inView, setActiveSection, timeOfLastClick]); // run only if one of these variables change
 
   return (
     <motion.section
