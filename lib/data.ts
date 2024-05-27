@@ -41,7 +41,7 @@ export const experiencesData = [
     location: "Miami, FL",
     description:
       "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
+    icon: React.createElement(LuGraduationCap), //because this is a ts file, we cannot have jsx elements (only can have such elements in a tsx file)
     date: "2019",
   },
   {
