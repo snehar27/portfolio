@@ -30,6 +30,7 @@ export default function Header() {
         gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] 
         sm:flex-nowrap sm:gap-5"
         >
+          {/* justify-center centers horizontally and items-center centers them vertically */}
           {links.map((link) => (
             <motion.li
               className="h-3/4 flex items-center justify-center relative"
