@@ -28,7 +28,7 @@ export default function Contact() {
     >
       {/* allows width to be either fixed or the entire screen, depending on width of screen (responsive!) */}
       <SectionHeading>Contact Me!</SectionHeading>
-      <p className="text-gray-700 -mt-3">
+      <p className="text-gray-700 -mt-3 dark:text-white/80">
         Please contact me directly at{" "}
         <a className="underline" href="mailto:sr934@cornell.edu">
           sr934@cornell.edu

@@ -85,21 +85,21 @@ export default function Intro() {
           Contact me! <BsArrowRight className="opacity-70" />
         </Link>
         <a
-          className="bg-white px-7 py-3 rounded-full flex items-center gap-2 outline-none hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10"
+          className="bg-white px-7 py-3 rounded-full flex items-center gap-2 outline-none hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
           href="/CV.pdf"
           download
         >
           Download Resume <HiDownload />
         </a>
         <a
-          className="bg-white p-4 text-gray-700 rounded-full flex items-center gap-2 hover:scale-[1.15] hover:text-gray-950  active:scale-105 transition cursor-pointer border border-black/10"
+          className="bg-white p-4 text-gray-700 rounded-full flex items-center gap-2 hover:scale-[1.15] hover:text-gray-950  active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
           href="https://www.linkedin.com/in/sneha-rajaraman-4884b5253"
           target="_blank" // opens in a new tab
         >
           <BsLinkedin />
         </a>
         <a
-          className="bg-white p-4 text-gray-700 rounded-full flex items-center gap-2 hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10"
+          className="bg-white p-4 text-gray-700 rounded-full flex items-center gap-2 hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
           href="https://github.com/snehar27"
           target="_blank"
         >

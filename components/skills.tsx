@@ -42,7 +42,7 @@ export default function Skills() {
             }}
             custom={index}
             key={index}
-            className="bg-white border border-black/[0.1] rounded-xl px-5 py-3" //border-black/[0.1] indicates that the border is black with an opacity of 0.1 (10%)
+            className="bg-white border border-black/[0.1] rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80" //border-black/[0.1] indicates that the border is black with an opacity of 0.1 (10%)
           >
             {skill}
           </motion.li>
