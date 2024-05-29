@@ -53,18 +53,19 @@ export default function Intro() {
             }}
           >
             🥳
+            {/* 👋 */}
           </motion.span>
         </div>
       </div>
       <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-3xl"
+        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">Hi! I'm Sneha.</span> I'm a{" "}
-        <span className="font-bold">student at Cornell University</span>{" "}
-        studying <span className="font-bold">Computer Science</span> in
-        Cornell's College of Engineering.
+        <span className="font-bold">software developer</span> studying Computer
+        Science at{" "}
+        <span className="font-bold">Cornell's College of Engineering</span> '26.
       </motion.h1>
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-md font-medium"
