@@ -1,14 +1,12 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import McDiver from "@/public/McDiver.png";
+import ImageClassification from "@/public/ImageClassification.png";
+import LFBI from "@/public/LFBI.png";
 import { GrTools } from "react-icons/gr";
 import { BiWorld } from "react-icons/bi";
 import { VscCode } from "react-icons/vsc";
 import { PiAirplaneTilt } from "react-icons/pi";
-// import rmtdevImg from "@/public/rmtdev.png";
-// import wordanalyticsImg from "@/public/wordanalytics.png";
 
 export const links = [
   {
@@ -91,18 +89,18 @@ export const projectsData = [
     imageUrl: McDiver,
   },
   {
-    title: "rmtDev",
+    title: "Image Classification",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: McDiver,
+      "Utilized Support Vector Machines (SVM) to develop an algorithm to classify images into one of four categories based on their RGB values.",
+    tags: ["Python", "SVM", "K-nearest neighbors"],
+    imageUrl: ImageClassification,
   },
   {
-    title: "Word Analytics",
+    title: "Lagos Food Bank Initiative (LFBI) Portal",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: McDiver,
+      "Created a user-friendly portal for volunteers at LFBI to post events, log volunteer hours, and store/retrieve organization data.",
+    tags: ["React", "Node.js", "Javascript", "Tailwind", "Prisma"],
+    imageUrl: LFBI,
   },
 ] as const;
 
