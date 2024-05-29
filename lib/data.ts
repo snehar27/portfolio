@@ -2,7 +2,11 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
+import McDiver from "@/public/McDiver.png";
+import { GrTools } from "react-icons/gr";
+import { BiWorld } from "react-icons/bi";
+import { VscCode } from "react-icons/vsc";
+import { PiAirplaneTilt } from "react-icons/pi";
 // import rmtdevImg from "@/public/rmtdev.png";
 // import wordanalyticsImg from "@/public/wordanalytics.png";
 
@@ -37,52 +41,68 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Academy of Engineering and Technology (AET)",
+    location: "Leesburg, VA",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap), //because this is a ts file, we cannot have jsx elements (only can have such elements in a tsx file)
-    date: "2019",
+      "Concurrently attended AET and was a student in the Engineering Pathway, participated in a research project and developed a device that detected pre-symptoms of Parkinson's Disease.",
+    icon: React.createElement(GrTools), //because this is a ts file, we cannot have jsx elements (only can have such elements in a tsx file)
+    date: "2018-2022",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Cornell University",
+    location: "Ithaca, NY",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+      "Student in Cornell's College of Engineering, Pursuing a B.S. in Computer Science with a minor in Artificial Intelligence.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2022-2026",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Hack4Impact Cornell",
+    location: "Ithaca, NY",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "Partnered with various organizations worldwide to develop full-stack applications to address societal issues.",
+    icon: React.createElement(BiWorld),
+    date: "2022 - present",
+  },
+  {
+    title: "Federal Aviation Administration Intern",
+    location: "Washington, D.C.",
+    description:
+      "Utilized the Microsoft SharePoint framework to design and build a user-centric site to streamline team operations and improve efficiency of data storage and retrieval.",
+    icon: React.createElement(PiAirplaneTilt),
+    date: "2023",
+  },
+  {
+    title: "Women in Computing @ Cornell (WICC) - Technical Committee Director",
+    location: "Ithaca, NY",
+    description:
+      "Worked with team to design and develop website for WICC, address any issues and organize ways to make work sessions more active and engaging.",
+    icon: React.createElement(VscCode),
+    date: "2023 - present",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "McDiver",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "Developed simulation using graph algorithms and concurrency where a protagonist navigates underground tunnels to quickly exit while optimizing treasure collection.",
+    tags: ["GUI", "Java", "IntelliJ"],
+    imageUrl: McDiver,
   },
   {
     title: "rmtDev",
     description:
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: corpcommentImg,
+    imageUrl: McDiver,
   },
   {
     title: "Word Analytics",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: corpcommentImg,
+    imageUrl: McDiver,
   },
 ] as const;
 
