@@ -22,7 +22,7 @@ export default function About() {
       <p className="mb-3">
         <b>
           Hi! My name is Sneha Rajaraman and I am a junior studying Computer
-          Science at Cornell University's College of Engineering.
+          Science at Cornell University&apos;s College of Engineering.
         </b>{" "}
         I am originally from Northern Virginia, where my Computer Science
         journey really began. Having been driven towards social service, I was
