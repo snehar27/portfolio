@@ -3,6 +3,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import McDiver from "@/public/McDiver.png";
 import ImageClassification from "@/public/ImageClassification.png";
 import LFBI from "@/public/LFBI.png";
+import LFBI2 from "@/public/LFBI2.png";
 import { GrTools } from "react-icons/gr";
 import { BiWorld } from "react-icons/bi";
 import { VscCode } from "react-icons/vsc";
@@ -100,7 +101,7 @@ export const projectsData = [
     description:
       "Created a user-friendly portal for volunteers at LFBI to post events, log volunteer hours, and store/retrieve organization data.",
     tags: ["React", "Node.js", "Javascript", "Tailwind", "Prisma"],
-    imageUrl: LFBI,
+    imageUrl: LFBI2,
   },
 ] as const;
 
