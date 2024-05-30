@@ -27,7 +27,7 @@ export default function About() {
         I am originally from Northern Virginia, where my Computer Science
         journey really began. Having been driven towards social service, I was
         exposed to the various ways technology can be used to make an impact,
-        and as my high school self started dabbling in various persuits in hopes
+        and as my high school self started dabbling in various pursuits in hopes
         of finding my passion, I came across the wondrous world of coding! I
         finally chose to pursue Computer Science as a career, not only because
         it had become something that I thoroughly enjoyed, but also because of
