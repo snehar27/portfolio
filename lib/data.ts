@@ -2,7 +2,9 @@ import React from "react";
 import { LuGraduationCap } from "react-icons/lu";
 import McDiver from "@/public/McDiver.png";
 import ImageClassification from "@/public/ImageClassification.png";
-import LFBI from "@/public/LFBI.png";
+import IC1 from "@/public/IC_1.png";
+import GameBoard from "@/public/BSGameBoard.png";
+import Battleship from "@/public/Battleship.png";
 import LFBI2 from "@/public/LFBI2.png";
 import { GrTools } from "react-icons/gr";
 import { BiWorld } from "react-icons/bi";
@@ -83,25 +85,32 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "Image Classification",
+    description:
+      "Utilized Support Vector Machines (SVM) to develop an algorithm to classify images into one of four categories based on their RGB values.",
+    tags: ["Python", "Numpy", "SVM"],
+    imageUrl: IC1,
+  },
+  {
+    title: "Battleship",
+    description:
+      "Developed a terminal based version of battleship with single and multiplayer modes. Implemented algorithm for computer to guess coordinates based on previous outcomes.",
+    tags: ["OCaml", "VSCode", "Dune Build"],
+    imageUrl: GameBoard,
+  },
+  {
+    title: "Lagos Food Bank Initiative (LFBI)",
+    description:
+      "Created a user-friendly portal for volunteers at LFBI to post events, log volunteer hours, and store/retrieve organization data.",
+    tags: ["React", "Node.js", "Javascript", "Tailwind", "Prisma"],
+    imageUrl: LFBI2,
+  },
+  {
     title: "McDiver",
     description:
       "Developed simulation using graph algorithms and concurrency where a protagonist navigates underground tunnels to quickly exit while optimizing treasure collection.",
     tags: ["GUI", "Java", "IntelliJ"],
     imageUrl: McDiver,
-  },
-  {
-    title: "Image Classification",
-    description:
-      "Utilized Support Vector Machines (SVM) to develop an algorithm to classify images into one of four categories based on their RGB values.",
-    tags: ["Python", "SVM", "K-nearest neighbors"],
-    imageUrl: ImageClassification,
-  },
-  {
-    title: "Lagos Food Bank Initiative (LFBI) Portal",
-    description:
-      "Created a user-friendly portal for volunteers at LFBI to post events, log volunteer hours, and store/retrieve organization data.",
-    tags: ["React", "Node.js", "Javascript", "Tailwind", "Prisma"],
-    imageUrl: LFBI2,
   },
 ] as const;
 
