@@ -2,6 +2,7 @@ import React from "react";
 import { LuGraduationCap } from "react-icons/lu";
 import McDiver from "@/public/McDiver.png";
 import ImageClassification from "@/public/ImageClassification.png";
+import ICRlogo from "@/public/ICR_page3.png";
 import IC1 from "@/public/IC_1.png";
 import GameBoard from "@/public/BSGameBoard.png";
 import Battleship from "@/public/Battleship.png";
@@ -111,6 +112,13 @@ export const projectsData = [
       "Developed simulation using graph algorithms and concurrency where a protagonist navigates underground tunnels to quickly exit while optimizing treasure collection.",
     tags: ["GUI", "Java", "IntelliJ"],
     imageUrl: McDiver,
+  },
+  {
+    title: "Ithaca Community Recovery (ICR)",
+    description:
+      "Developed a centralized web application ICR to streamline volunteer efforts in tracking meetings and events, incorporating role-based access controls.",
+    tags: ["Javascript", "React", "Next.js", "MongoDB", "Prisma", "VSCode"],
+    imageUrl: ICRlogo,
   },
 ] as const;
 
