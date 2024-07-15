@@ -89,7 +89,7 @@ export const projectsData = [
     title: "Image Classification",
     description:
       "Utilized Support Vector Machines (SVM) to develop an algorithm to classify images into one of four categories based on their RGB values.",
-    tags: ["Python", "Numpy", "SVM"],
+    tags: ["Python", "Sklearn", "Numpy", "SVM", "Matplot"],
     imageUrl: IC1,
   },
   {
